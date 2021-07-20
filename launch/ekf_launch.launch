@@ -1,0 +1,11 @@
+<!--Odom EKF configuration directory-->
+<launch>
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_odom" clear_params="true"> 
+        <rosparam command="load" file="$(find robot_localization)/params/ekf_odom.yaml" />
+    </node>
+    
+    <!--AMCL and Beacon EKF configuration directory-->
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_map" clear_params="true"> 
+        <rosparam command="load" file="$(find robot_localization)/params/ekf_map.yaml" />
+    </node>
+</launch>
