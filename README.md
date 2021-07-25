@@ -5,4 +5,4 @@ robot_localization is a package of nonlinear state estimation nodes. The package
 
 Please see documentation here: http://docs.ros.org/melodic/api/robot_localization/html/index.html
 
-for this project I use the Extended Kalman Filter configuration to publish /ekf_map and /ekf_odom nodes
+For this project I use the Extended Kalman Filter configuration to publish /ekf_map and /ekf_odom nodes
