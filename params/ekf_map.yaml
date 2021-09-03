@@ -1,3 +1,5 @@
+# Handle the map to odom transformation
+
 frequency: 30
 
 two_d_mode: true # zero out all 3D values (Z, roll, pitch, their respective velocities and Z acce)
@@ -10,7 +12,7 @@ publish_tf: true
 map_frame: map              # Defaults to "map" if unspecified
 odom_frame: odom            # Defaults to "odom" if unspecified
 base_link_frame: base_link  # Defaults to "base_link" if unspecified
-world_frame: map            # case 3 
+world_frame: map            
 
 # the order of the boolean values are
 # (X,Y,Z,roll,pitch,yaw,X˙,Y˙,Z˙,roll˙,pitch˙,yaw˙,X¨,Y¨,Z¨
